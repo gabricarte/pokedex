@@ -3,7 +3,7 @@
 
 ## General Overview
 
-Web application that simulates a Pokédex, allowing users to search for Pokémon by name, view their stats, and capture them. Users can also manage their captured Pokémon by deleting them individually or clearing the entire list.
+Web project that simulates a Pokédex, allowing users to search for Pokémon by name, view their stats, and capture them. Users can also manage their captured Pokémon by deleting them individually or clearing the entire list.
 
 ## Technologies Used
 - HTML, CSS, Javascript and PokéAPI.
