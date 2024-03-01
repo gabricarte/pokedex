@@ -1,0 +1,82 @@
+/* CSS for both gameboy and pokedex sections */
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 0;
+    color: #1f1f1f;
+}
+
+body {
+    background-color: #1f1f1f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+main{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-areas: "gameboy"
+    "pokedex";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    /* smartphones */ 
+    main {
+        height: 100%;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .pokedex {
+        min-height: 50vh;
+    }
+
+    .pokedex ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    li .pokemon-stats {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* tablets */ 
+    main {
+        width: 50%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .pokedex ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    li .pokemon-stats {
+        flex-direction: row;
+    }
+}

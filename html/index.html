@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="../css/gameboy.css">
+    <link rel="stylesheet" href="../css/pokedex.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <main>
+        <section class="gameboy">
+            <div class="gameboy-header">
+                <h2>capture a pokémon</h2>
+                <img src="../imgs/logo.png" alt="Pokémon logo">
+            </div>
+            <div class="screen">
+                <h4 id="message"></h4>
+                <p id="loading-message" style="display: none;">loading...</p>
+                <img id="pokemon-img">
+                <div class="pokemon-stats">
+                    <p id="hp"></p>
+                    <p id="attack"></p>
+                    <p id="defense"></p>
+                </div>
+                <button style="display: none;" id="capture-btn">capture!</button>
+            </div>
+            <div class="gameboy-footer">
+                <input type="text" placeholder="Pokemon name" id="pokemon-name">
+                <div class="btns">
+                    <button id="enter-btn">&#10004;</button>
+                    <button id="reset-btn">&#10006;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="pokedex">
+            <div class="pokedex-header">
+                <h2>pokédex</h2>
+                <button id="delete-all-btn">delete all</button>
+            </div>
+            <ul id="pokemonList"></ul>
+        </section>
+    </main>
+    <script src="../js/views/views.js" type="module"></script>
+    <script src="../js/index.js" type="module"></script>
+</body>
+</html>
